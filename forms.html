@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+  <legend style="border: 3;" >Personal</legend>
+
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        <label><label for="username">Username:</label>
+        <input type="text" id="username" minlength="6" maxlength="10" required  placeholder="Enter your email"> <br>
+        
+
+        <label for="Password">Password</label>
+        <input type="Password" id="Password" placeholder="Enter your Password" minlength="6" maxlength="10" required > <br><br>
+        
+        
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Input email"><br> <br>
+
+        <label for="Phone">Phone No:</label>
+        <input type="tel" id="Phone" placeholder="input phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <br><br>
+
+        <label for="Date of Birth">Date of Birth</label>
+        <input type="Date of Birth" id="Date of Birth" placeholder="DD/MM/YYYY"><br>
+
+        <label for="bday">birthdate</label>
+        <input type="date" id="bday"><br><br>
+
+        <label for="Quantity">Quantity</label>
+        <input type="number" id="Quantity" placeholder="0-9" min="0" max="10" value="1"><br><br>
+
+        <label for="Mr">Mr</label>
+        <input type="radio" id="Mr" value="Mr" name="title"><br><br>
+
+        <label for="Mrs">Mrs</label>
+        <input type="radio" id="Mrs" value="Mrs" name="title"><br><br>
+
+        <label for="Miss">Miss</label>
+        <input type="radio" id="Miss" name="title"><br><br>
+
+        <label for="Payment"> Payment</label>
+        <select>
+            <option value="Visa">Visa</option>
+            <option value="Debit card">Debit card</option>
+            <option value="Paypal">Paypal</option>
+            <option value="Mpesa">Mpesa</option>
+        </select>
+
+        <label for="Subscribe">Subscribe</label>
+        <input type="checkbox" id="Subscribe"><br>
+
+        <input type="submit"> <br>
+        <input type="reset"> <br> <br>
+
+        <label for="Comment">Comment:</label>
+        <textarea id="Comment" rows="3" cols="24" placeholder="Type here" style=" background-color: aqua;">Type here</textarea><br>
+
+        <label for="File">File</label>
+        <input type="File" id="File" accept="image/png, image/jpeg,"><br>
+        <BR></BR>
+
+        <button style="background-color: brown;" > SUBMIT</button>
+
+
+    </form>
+
+    <a href="#">Back to the top</a>
+
+</body>
+</html>
